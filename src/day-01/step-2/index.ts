@@ -1,4 +1,3 @@
-import { FileLoader } from '../../utils/file-loader';
 import { Action, Rotation, Position, Direction } from '../model';
 import { Day1 } from '../day-01';
 

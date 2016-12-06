@@ -4,9 +4,7 @@
   "description": "Advent of code 2016",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --opts mocha.opts",
-    "build" : "tsc",
-    "run" : "node dist/app.js"
+    "test": "mocha --opts mocha.opts"
   },
   "repository": {
     "type": "git",
