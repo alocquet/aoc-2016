@@ -1,0 +1,37 @@
+{
+  "name": "aoc-2016",
+  "version": "1.0.0",
+  "description": "Advent of code 2016",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts mocha.opts",
+    "build" : "tsc",
+    "run" : "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alocquet/aoc-2016.git"
+  },
+  "author": "alocquet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alocquet/aoc-2016/issues"
+  },
+  "homepage": "https://github.com/alocquet/aoc-2016#readme",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/chai-as-promised": "0.0.29",
+    "@types/graceful-fs": "^2.0.29",
+    "@types/mocha": "^2.2.33",
+    "@types/sinon": "^1.16.32",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.6",
+    "ts-node": "^1.7.0",
+    "typescript": "^2.0.10"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11"
+  }
+}
