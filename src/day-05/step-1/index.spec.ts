@@ -8,14 +8,14 @@ describe('day-05-s1', () => {
         use(chaiAsPromised);
         should();
     });
-    it(''abc' give '18f47a30'', function() {
+    it('\'abc\' give \'18f47a30\'', function() {
         this.timeout(60000);
         // Act
         let result = day.execute('abc');
         // Assert
         return result.should.eventually.equal('18f47a30');
     });
-    it(''reyedfim' give 'f97c354d'', function() {
+    it('\'reyedfim\' give \'f97c354d\'', function() {
         this.timeout(60000);
         // Act
         let result = day.execute('reyedfim');
