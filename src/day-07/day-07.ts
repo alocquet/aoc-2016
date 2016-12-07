@@ -10,8 +10,8 @@ export abstract class Day7 extends Day<number> {
         let patternIn = /\[[a-z]+\]/g;
         return input.split(/\r?\n/).map(line => {
             let res = new Ip();
-            res.hypernet = line.match(patternIn).map(elt => elt.replace(/[\[\]]/g,''));
-            res.supernet = line.match(patternOut).map(elt => elt.replace(/[\[\]]/g,''));
+            res.hypernet = line.match(patternIn).map(elt => elt.replace(/[\[\]]/g, ''));
+            res.supernet = line.match(patternOut).map(elt => elt.replace(/[\[\]]/g, ''));
             return res;
         });
     }

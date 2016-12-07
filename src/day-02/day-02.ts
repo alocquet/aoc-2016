@@ -13,7 +13,7 @@ export abstract class Day2 extends Day<string> {
             actionLine.forEach(action => {
                 switch (action) {
                     case 'U': if (this.getKey(position.x, position.y - 1)) { position.y--; } break;
-                    case 'D': if (this.getKey(position.x,position.y + 1)) { position.y++; } break;
+                    case 'D': if (this.getKey(position.x, position.y + 1)) { position.y++; } break;
                     case 'R': if (this.getKey(position.x + 1, position.y)) { position.x++; } break;
                     case 'L': if (this.getKey(position.x - 1, position.y)) { position.x--; } break;
                 }

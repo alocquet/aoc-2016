@@ -30,7 +30,7 @@ export class Day7Step2 extends Day7 {
 
     hasCorrespondingBaB(ip: Ip, abas: string[]): boolean {
         return ip.hypernet.find(hyp => {
-            return abas.find(aba => hyp.match(aba[1] + aba[0] + aba[1])!==null) != undefined;
+            return abas.find(aba => hyp.match(aba[1] + aba[0] + aba[1]) !== null) !== undefined;
         }) !== undefined;
     }
 }

@@ -6,7 +6,7 @@ export class Day1Step2 extends Day1 {
     execute(input: string): number {
         let actions = this.parse(input);
         let positions: Position[] = [new Position()];
-        let positionAlreadyVisited
+        let positionAlreadyVisited;
 
         let found = actions.find(action => {
             // compute new position from last one
@@ -18,7 +18,7 @@ export class Day1Step2 extends Day1 {
                 position = new Position(position);
                 position.x = position.x + factors.x;
                 position.y = position.y + factors.y;
-                if(positions.find(elt=>elt.x === position.x && elt.y === position.y)){
+                if (positions.find(elt => elt.x === position.x && elt.y === position.y)) {
                     positionAlreadyVisited = position;
                     return true;
                 }

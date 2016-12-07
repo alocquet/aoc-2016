@@ -2,12 +2,12 @@ import { expect, should, use } from 'chai';
 import * as chaiAsPromised from 'chai-as-promised';
 import { Day6Step2 } from '.';
 
-describe("day-06-s2", () => {
+describe('day-06-s2', () => {
     before(() => {
         use(chaiAsPromised);
         should();
     });
-    it("Exemple...", () => {
+    it('Exemple...', () => {
         let day = new Day6Step2();
         day.filename = 'assets/day-06-test.txt';
         // Act
@@ -15,7 +15,7 @@ describe("day-06-s2", () => {
         // Assert
         return result.should.eventually.equal('advent');
     });
-    it("Input...", () => {
+    it('Input...', () => {
         let day = new Day6Step2();
         // Act
         let result = day.run();

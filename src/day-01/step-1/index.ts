@@ -5,7 +5,7 @@ export class Day1Step1 extends Day1 {
 
     execute(input: string): number {
         let actions = this.parse(input);
-        let position: Position= new Position();
+        let position: Position = new Position();
         actions.forEach(action => {
             // compute new position
             position.direction = this.getNewDirection(position, action);

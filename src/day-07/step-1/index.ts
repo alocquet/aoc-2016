@@ -7,7 +7,7 @@ export class Day7Step1 extends Day7 {
         let lines = this.parse(input);
         return lines.filter(line => this.isTLS(line)).length;
     }
-    
+
     isTLS(ip: Ip): boolean {
         return ip.supernet.find(elt => this.isAbba(elt)) &&
             !ip.hypernet.find(elt => this.isAbba(elt));
