@@ -14,5 +14,9 @@ npm i
 ```shell
 npm test
 ```
+* run tests only for one day
+```shell
+npm test -- --grep day-05
+```
 <h2>Credit</h2>
 <a href="http://adventofcode.com/">Advent of code</a>

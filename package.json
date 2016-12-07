@@ -30,6 +30,7 @@
     "typescript": "^2.0.10"
   },
   "dependencies": {
-    "graceful-fs": "^4.1.11"
+    "graceful-fs": "^4.1.11",
+    "ts-md5": "^1.2.0"
   }
 }
