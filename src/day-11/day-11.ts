@@ -1,6 +1,6 @@
-import { Building, Floor, Step, Histo } from './model';
+import { Building, Floor, Step, Histo, ElementType } from './model';
 
-export abstract class Day11 {
+export class Day11 {
 
     histo = new Map<string, Histo>();
 
@@ -32,7 +32,7 @@ export abstract class Day11 {
             newBuildings = newBuildings.concat(this.computeNextFloor(histo, building, building.elevator - 1));
             for (let newBuilding of newBuildings) {
                 this.queue.push(newBuilding);
-                //console.log(newBuilding.hash());
+                // console.log(newBuilding.hash());
             }
             // console.log(this.queue.length);
         }
