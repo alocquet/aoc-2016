@@ -27,6 +27,10 @@ export class Building {
         this.elevator = newElevator;
         this.step++;
     }
+
+    isValid(): boolean {
+        return this.floors.every(floor => floor.isValid());
+    }
 }
 
 export enum ElementType {

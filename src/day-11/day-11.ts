@@ -32,7 +32,7 @@ export abstract class Day11 {
             newBuildings = newBuildings.concat(this.computeNextFloor(histo, building, building.elevator - 1));
             for (let newBuilding of newBuildings) {
                 this.queue.push(newBuilding);
-                // console.log(newBuilding.hash());
+                //console.log(newBuilding.hash());
             }
             // console.log(this.queue.length);
         }
@@ -55,7 +55,7 @@ export abstract class Day11 {
         steps.forEach(step => {
             let newBuilding = building.clone();
             newBuilding.applyStep(step, newElevator);
-            if (newBuilding.floors[newBuilding.elevator].isValid()) {
+            if (newBuilding.isValid()) {
                 let hash = newBuilding.hash();
                 let alreadyVisited = this.histo.get(hash);
                 if (!alreadyVisited || alreadyVisited.size > histo.size) {

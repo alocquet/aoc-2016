@@ -21,8 +21,8 @@ describe('day-11', () => {
         // Assert
         expect(result).to.be.equal(11);
     });
-  /* it('Input...', function () {
-        this.timeout(20 * 60 * 1000);
+   it('Input...', function () {
+        this.timeout(2 * 60 * 1000);
         let result = new Promise<number>((resolve, reject) => {
             let day = new Day11Step1(new Building([
                 new Floor(0, [new Element(ElementType.GENERATOR, 'T'), new Element(ElementType.GENERATOR, 'PL'), new Element(ElementType.GENERATOR, 'S'), new Element(ElementType.CHIP, 'T')]),
@@ -35,9 +35,9 @@ describe('day-11', () => {
         });
         // Assert
         return result.should.eventually.equal(31);
-    });*/
+    });
     it('Input - Step 2...', function () {
-        this.timeout(20 * 60 * 1000);
+        this.timeout(60 * 60 * 1000);
         let result = new Promise<number>((resolve, reject) => {
             let day = new Day11Step1(new Building([
                 new Floor(0, [new Element(ElementType.GENERATOR, 'T'), new Element(ElementType.GENERATOR, 'PL'), new Element(ElementType.GENERATOR, 'S'), new Element(ElementType.CHIP, 'T')
@@ -50,6 +50,6 @@ describe('day-11', () => {
             resolve(day.run());
         });
         // Assert
-        return result.should.eventually.equal(51);
+        return result.should.eventually.equal(55);
     });
 });
