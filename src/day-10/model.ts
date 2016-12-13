@@ -31,6 +31,6 @@ export class SafeMap<ID, T> extends Map<ID, T> {
         if (!this.has(id)) {
             this.set(id, this.factory(id));
         }
-        return this.get(id)
+        return this.get(id);
     }
 }
