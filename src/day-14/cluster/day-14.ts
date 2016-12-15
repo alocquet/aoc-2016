@@ -1,5 +1,5 @@
-import { Md5 } from 'ts-md5/dist/md5';
 import { } from './model';
+import { createHash } from 'crypto';
 
 export class Request {
     constructor(public idx: number, public range: number, public salt: string, public stretch: number = 0) { }
@@ -31,7 +31,7 @@ export class RequestProcessor {
         }
         let hash = input;
         for (let stretchId = 0; stretchId <= stretch; stretchId++) {
-            hash = <string>Md5.hashStr(hash, false);
+            hash = createHash('MD5').update(hash).digest('hex');
         }
         RequestProcessor.cache.set(input, hash);
         return hash;

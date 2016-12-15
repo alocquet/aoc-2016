@@ -1,5 +1,5 @@
-import { Md5 } from 'ts-md5/dist/md5';
 import { Index } from './model';
+import { createHash } from 'crypto';
 
 export abstract class Day5 {
 
@@ -14,6 +14,6 @@ export abstract class Day5 {
     }
 
     computeMd5(input: string): string {
-        return <string>Md5.hashStr(input, false);
+        return createHash('MD5').update(input).digest('hex');
     }
 }
