@@ -18,5 +18,10 @@ npm test
 ```shell
 npm test -- --grep day-05
 ```
+* run clustered program
+```shell
+tsc
+node dist/day-14/cluster/cluster.js
+```
 <h2>Credit</h2>
 <a href="http://adventofcode.com/">Advent of code</a>
