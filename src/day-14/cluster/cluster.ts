@@ -7,6 +7,7 @@ const numCPUs = cpus().length;
 if (cluster.isMaster) {
     let workers = [];
     let keys = [];
+    let time = new Date().getTime();
     for (let i = 0; i < numCPUs; i++) {
         let worker = cluster.fork({ id: i, range: 100, step: numCPUs, salt: 'cuanljph' });
         workers.push(worker);
@@ -21,9 +22,8 @@ if (cluster.isMaster) {
     }
     cluster.on('exit', (worker, code, signal) => {
         if (workers.every(worker => worker.isDead())) {
-            /*console.log(keys.reduce((all, step) => all.concat(step), []).sort((a, b) => a - b).pop());*/
             console.log(keys.reduce((all, step) => all.concat(step), []).sort((a, b) => a - b)[63]);
-            /* console.log(keys.reduce((all, step) => all.concat(step), []).sort((a, b) => a - b));*/
+            console.log('in ' + (new Date().getTime() - time) + ' ms');
         }
     });
 } else {
