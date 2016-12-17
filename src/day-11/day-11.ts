@@ -26,15 +26,12 @@ export class Day11 {
             }
             if (building.step > step) {
                 step = building.step;
-                console.log(step);
             }
             let newBuildings = this.computeNextFloor(histo, building, building.elevator + 1);
-            newBuildings = newBuildings.concat(this.computeNextFloor(histo, building, building.elevator - 1));
+            newBuildings.push(...this.computeNextFloor(histo, building, building.elevator - 1));
             for (let newBuilding of newBuildings) {
                 this.queue.push(newBuilding);
-                // console.log(newBuilding.hash());
             }
-            // console.log(this.queue.length);
         }
         return foundWay;
     }
