@@ -1,9 +1,9 @@
 import { expect, should, use } from 'chai';
 import * as chaiAsPromised from 'chai-as-promised';
-import { Day19 } from './day-19';
+import { Day19Step1 } from '.';
 
-describe('day-19', () => {
-    let day = new Day19();
+describe('day-19-step1', () => {
+    let day = new Day19Step1();
     before(() => {
         use(chaiAsPromised);
         should();

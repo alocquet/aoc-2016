@@ -1,13 +1,13 @@
 import { } from './model';
 
-export class Day19 {
+export abstract class Day19 {
 
     execute(elvesCount: number) {
         let elves = new Array(elvesCount).fill(1);
         let idx = 0;
         let elveId;
         while (elveId === undefined) {
-            let nextId = this.getNextElf(elves, idx);
+            let nextId = this.getElfToSteal(elves, idx);
             elves[idx] += elves[nextId];
             elves[nextId] = 0;
             nextId = this.getNextElf(elves, idx);
@@ -19,6 +19,8 @@ export class Day19 {
         }
         return elveId + 1;
     }
+
+    abstract getElfToSteal(elves: number[], start: number);
 
     getNextElf(elves: number[], start: number) {
         let idx = start + 1;
