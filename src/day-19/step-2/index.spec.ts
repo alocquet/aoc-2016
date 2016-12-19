@@ -1,9 +1,9 @@
 import { expect, should, use } from 'chai';
 import * as chaiAsPromised from 'chai-as-promised';
-import { Day19Step1 } from '.';
+import { Day19Step2 } from '.';
 
-describe('day-19-s1', () => {
-    let day = new Day19Step1();
+describe('day-19-s2', () => {
+    let day = new Day19Step2();
     before(() => {
         use(chaiAsPromised);
         should();
@@ -12,12 +12,13 @@ describe('day-19-s1', () => {
         // Act
         let result = day.execute(5);
         // Assert
-         expect(result).to.be.equal(3);
+         expect(result).to.be.equal(2);
     });
-    it('With 3014387 elves, the last elve with present is 3', () => {
+    it('With 3014387 elves, the last elve with present is 1420064', function () {
+        this.timeout(2 * 60 * 1000);
         // Act
         let result = day.execute(3014387);
         // Assert
-         expect(result).to.be.equal(1834471);
+         expect(result).to.be.equal(1420064);
     });
 });
