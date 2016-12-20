@@ -1,5 +1,3 @@
-import { Elf } from './../model';
-
 export class Day19Step1 {
 
        execute(elvesCount: number) {
