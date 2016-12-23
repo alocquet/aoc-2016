@@ -8,7 +8,6 @@ export abstract class Day23 extends Day<number> {
         let operations = this.parse(input);
         for (let idx = 0; idx < operations.length; idx++) {
             let operation = operations[idx];
-            // console.log(idx, operation, registers);
             if (operation instanceof Cpy) {
                 if (registers[operation.target] !== undefined) {
                     if (registers[operation.value] !== undefined) {
