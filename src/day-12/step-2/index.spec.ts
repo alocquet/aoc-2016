@@ -8,8 +8,7 @@ describe('day-12-s2', () => {
         should();
     });
     it('Exemple...', () => {
-        let day = new Day12Step2();
-        day.filename = 'assets/day-12-test.txt';
+        let day = new Day12Step2('assets/day-12-test.txt');
         // Act
         let result = day.run();
         // Assert
@@ -17,7 +16,7 @@ describe('day-12-s2', () => {
     });
     it('Input...', function() {
         this.timeout(10000);
-        let day = new Day12Step2();
+        let day = new Day12Step2('assets/day-12.txt');
         // Act
         let result = day.run();
         // Assert

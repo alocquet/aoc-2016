@@ -1,8 +1,8 @@
-import { Cpy, Jnz, Inc, Dec } from './../model';
+import { Cpy, Jnz, Inc, Dec, Registers } from './../model';
 import { Day12 } from '../day-12';
 
 export class Day12Step2 extends Day12 {
     execute(input: string): number {
-        return this.compute(input, { 'a': 0, 'b': 0, 'c': 1, 'd': 0 });
+        return this.compute(input, new Registers(0, 0, 1, 0));
     }
 }

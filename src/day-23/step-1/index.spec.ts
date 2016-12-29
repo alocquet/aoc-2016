@@ -9,7 +9,6 @@ describe('day-23-s1', () => {
     });
     it('Exemple...', () => {
         let day = new Day23Step1('assets/day-23-test.txt');
-        day.filename = 'assets/day-23-test.txt';
         // Act
         let result = day.run();
         // Assert
@@ -20,6 +19,6 @@ describe('day-23-s1', () => {
         // Act
         let result = day.run();
         // Assert
-        return result.should.eventually.equal(318007);
+        return result.should.eventually.equal(12573);
     });
 });
