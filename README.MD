@@ -1,4 +1,7 @@
-<h1>Soluces - Advent of code 2016</h1>
+<h1>Soluces - Advent of code 2016 [![Build Status](https://travis-ci.org/alocquet/aoc-2016.svg?branch=master)](https://travis-ci.org/alocquet/aoc-2016)</h1>
+
+[![Build Status](https://travis-ci.org/alocquet/aoc-2016.svg?branch=master)](https://travis-ci.org/alocquet/aoc-2016)
+
 Soluces for Advent of code 2016 written with TypeScript and mocha tests.
 
 <h2>Build</h2>
