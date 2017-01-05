@@ -19,6 +19,6 @@ describe('day-21-s2', () => {
         // Act
         let result = day.run();
         // Assert
-        return result.should.eventually.be.equal('XXX');
+        return result.should.eventually.be.equal('gahedfcb');
     });
 });

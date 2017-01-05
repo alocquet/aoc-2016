@@ -16,7 +16,7 @@ describe('day-05-s2', () => {
         return result.should.eventually.equal('05ace8e3');
     });
     it('\'reyedfim\' give \'863dde27\'', function () {
-        this.timeout(60000);
+        this.timeout(120000);
         // Act
         let result = day.execute('reyedfim');
         // Assert
