@@ -1,5 +1,3 @@
-import * as Hash from 'object-hash';
-
 export class Building {
 
     constructor(public floors: Floor[], public elevator: number = 0, public step: number = 0) { }
@@ -9,8 +7,6 @@ export class Building {
     }
 
     hash(): string {
-        /*let res = Hash(this.elevator + this.floors.reduce((hash, floor) => hash + ' | ' + floor.hash(), ' | '));
-        return res;*/
         return this.elevator + this.floors.reduce((hash, floor) => hash + floor.hash(), '');
     }
 
