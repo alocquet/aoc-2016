@@ -1,1 +1,1 @@
--r ts-node/register -R spec src/**/*.spec.ts
+-r ts-node/register -R spec src/**/*.spec.ts -i -g day-05 -g day-11 day-14
